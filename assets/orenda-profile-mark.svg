@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title desc">
+  <title id="title">Orenda Puzzles profile mark</title>
+  <desc id="desc">A friendly circular Orenda Puzzles mark with a puzzle path, number-grid motif, and OP initials.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#1f9a9a"/>
+      <stop offset="1" stop-color="#17496b"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#123048" flood-opacity=".25"/>
+    </filter>
+  </defs>
+  <circle cx="512" cy="512" r="488" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="426" fill="#fffdf8" opacity=".96" filter="url(#shadow)"/>
+  <path d="M206 606c88-112 170-115 245-9 76 106 166 97 271-28 46-55 83-81 111-80" fill="none" stroke="#f46f5e" stroke-width="34" stroke-linecap="round" stroke-dasharray="1 72"/>
+  <g transform="translate(246 226)" fill="none" stroke="#17496b" stroke-width="18" stroke-linecap="round">
+    <rect x="0" y="0" width="222" height="222" rx="24" fill="#fffaf0"/>
+    <path d="M74 0v222M148 0v222M0 74h222M0 148h222"/>
+  </g>
+  <g transform="translate(560 238)">
+    <path d="M74 0l74 43v86l-74 43L0 129V43z" fill="#f7bd3b"/>
+    <path d="M74 38l41 24v48l-41 24-41-24V62z" fill="#fffaf0" opacity=".72"/>
+  </g>
+  <text x="512" y="716" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="220" font-weight="800" letter-spacing="0" fill="#17496b">OP</text>
+  <path d="M331 792h362" stroke="#1f9a9a" stroke-width="24" stroke-linecap="round"/>
+</svg>
