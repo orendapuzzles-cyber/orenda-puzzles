@@ -159,10 +159,57 @@ h2 {
 }
 
 .book-section,
+.kakuro-section,
 .collections-section,
 .starter-section,
 .follow-section {
   padding: clamp(48px, 8vw, 96px) clamp(20px, 5vw, 72px);
+}
+
+.kakuro-section {
+  display: grid;
+  grid-template-columns: minmax(0, 0.94fr) minmax(320px, 1.06fr);
+  gap: clamp(28px, 5vw, 72px);
+  align-items: center;
+  background: var(--ink);
+  color: var(--white);
+}
+
+.kakuro-section .eyebrow {
+  color: var(--yellow);
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.steps article {
+  min-height: 190px;
+  padding: 24px;
+  border-radius: 8px;
+  background: rgba(255, 253, 248, 0.1);
+  border: 1px solid rgba(255, 253, 248, 0.18);
+}
+
+.steps span {
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  border-radius: 50%;
+  background: var(--yellow);
+  color: var(--ink);
+  font-weight: 900;
+}
+
+.steps p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.45;
 }
 
 .collections-section {
@@ -243,6 +290,44 @@ h2 {
     var(--paper);
 }
 
+.starter-list {
+  display: grid;
+  gap: 10px;
+  margin: 24px 0 0;
+  padding-left: 20px;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.signup-card {
+  width: min(100%, 390px);
+  padding: 28px;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: var(--shadow);
+  border: 1px solid rgba(23, 73, 107, 0.12);
+}
+
+.signup-card h3 {
+  margin: 0 0 12px;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.signup-card p {
+  margin-bottom: 22px;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.signup-card small {
+  display: block;
+  margin-top: 14px;
+  color: rgba(23, 73, 107, 0.72);
+  font-weight: 700;
+}
+
 .section-copy {
   max-width: 790px;
 }
@@ -290,6 +375,7 @@ footer p {
   }
 
   .hero,
+  .kakuro-section,
   .book-section {
     grid-template-columns: 1fr;
   }
@@ -311,7 +397,8 @@ footer p {
     grid-template-columns: 1fr;
   }
 
-  .collection-grid {
+  .collection-grid,
+  .steps {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -331,7 +418,8 @@ footer p {
     width: 100%;
   }
 
-  .collection-grid {
+  .collection-grid,
+  .steps {
     grid-template-columns: 1fr;
   }
 }
