@@ -41,14 +41,16 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   text-decoration: none;
   font-weight: 800;
 }
 
 .brand img {
-  width: 42px;
-  height: 42px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 nav {
